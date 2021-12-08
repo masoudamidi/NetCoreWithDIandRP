@@ -1,0 +1,50 @@
+@{
+  ViewData["Title"] = "Home Page";
+}
+
+<div class="col-md-12 col-lg-12">
+  <h4 class="mb-3">GET TASKS</h4>
+  <form class="needs-validation" >
+    <div class="row g-3">
+      <div class="col-sm-6">
+        <label for="Lat" class="form-label">Lat</label>
+        <input type="number" class="form-control" id="Lat" placeholder="Please insert LATITUDE" value="">
+        <div class="invalid-feedback">
+          Valid first name is required.
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <label for="Long" class="form-label">Long</label>
+        <input type="number" class="form-control" id="Long" placeholder="Please insert LONGITUDE" value="">
+        <div class="invalid-feedback">
+          Valid last name is required.
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-sm-6">
+        <label for="maxdistance" class="form-label">Max Distance</label>
+        <input type="number" class="form-control" id="maxdistance" placeholder="please insert a number greater than zero" value="" min="0">
+        <div class="invalid-feedback">
+          Valid first name is required.
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <label for="maxresults" class="form-label">Max Results</label>
+        <input type="number" class="form-control" id="maxresults" placeholder="please insert a number greater than zero" value="" min="1">
+        <div class="invalid-feedback">
+          Valid first name is required.
+        </div>
+      </div>
+    </div>
+    
+    <hr class="my-4">
+
+    <input type="button" class="w-100 btn btn-primary btn-lg" onclick="GetLocations()" value="Search"></input>
+  </form>
+</div>
+<div id="resultdiv" class="col-md-12 col-lg-12">
+
+</div>

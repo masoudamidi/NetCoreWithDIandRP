@@ -1,0 +1,39 @@
+@model DataAccess.Models.SearchResult
+@{
+    Layout = null;
+}
+
+@if(Model != null && Model.Status == true)
+{
+    <br />
+    <h2>Locations</h2>
+    <div class="table-responsive">
+        <table id="resulttable" class="table table-striped table-sm">
+            <thead>
+                <tr>
+                    <th scope="col">Address</th>
+                    <th scope="col">Distance (Meters)</th>
+                    <th scope="col">Latitude</th>
+                    <th scope="col">Longitude</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.locations)
+                {
+                    <tr>
+                        <td>@item.Address</td>
+                        <td>@item.Distance</td>
+                        <td>@item.Latitude</td>
+                        <td>@item.Longitude</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else {
+    <br />
+    <div class="alert alert-danger" role="alert">
+       @(Model == null ? "Something went wrong, plesae try again later" : Model.Message)
+    </div>
+}
