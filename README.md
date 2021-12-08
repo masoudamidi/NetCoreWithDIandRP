@@ -8,7 +8,7 @@ I used .Net Core WebApp for this project with Three Layer Architecture. For exec
 
       DATABASE : https://drive.google.com/file/d/1GkYzZWq13CdYFb6RSLg9MlV_a9uEdZDu/view?usp=sharing
       
-      * The Database contains the sample data you gave with a stored procedure.
+      * The Database contains the sample data with a stored procedure.
       
 2. Restore database in your local pc. Because I refer local in the connection. If you want to restore it on a server please change the connection string too.
 3. Download the project In this github
