@@ -1,4 +1,4 @@
-# Sample .NET Core With DI and Repository Pattern
+# Sample .NET Core With DI and Repository Pattern and xUnit Testing
 
 Hello,
 
